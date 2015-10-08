@@ -81,3 +81,12 @@ a:hover{
 	text-align:center;
 	padding:10px;
 }
+.copyright {
+	background-color: #fff;
+	color: #001323; /* Scout Black */
+	font-size: 0.8em;
+	padding: 0px 0;
+	text-align:center;
+	margin: 0px;
+	clear: both;
+}

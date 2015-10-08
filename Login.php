@@ -127,7 +127,7 @@ else if($_POST['submit']=='Register')
 		{
 			send_mail(	'neeraj@myandroidng.com',
 						$_POST['email'],
-						'Registration System Demo - Your New Password',
+						'Lakshaya Apartment Registration - Your New Password',
 						'Your password is: '.$pass);
 
 			$_SESSION['msg']['reg-success']='We sent you an email with your new password!';
@@ -195,13 +195,15 @@ if($_SESSION['msg'])
 	<div id="panel">
 		<div class="content clearfix">
 			<div class="left">
-				<h1>The Sliding jQuery Panel</h1>
-				<h2>A register/login solution</h2>		
-				<p class="grey">You are free to use this login and registration system in you sites!</p>
+				<h1>The Serious android developer Panel</h1>				
+				<h2>apartment solution Android</h2>		
+				<p class="grey">Please register yourself here / Login to enter into Appartment system !</p>				
 				<h2>A Big Thanks</h2>
-				<p class="grey">This tutorial was built on top of <a href="http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery" title="Go to site">Web-Kreation</a>'s amazing sliding panel.</p>
-			</div>
-            
+				<p class="grey">To all supporters and my friends</p>
+				<p class="grey"><u>Contact Us</u></p>
+				<p class="grey">Neeraj Goswami</p>
+				<p class="grey">+91- 9899846293</p>
+			</div>            
             
             <?php
 			
@@ -237,8 +239,7 @@ if($_SESSION['msg'])
 				<form action="" method="post">
 					<h1>Not a member yet? Sign Up!</h1>		
                     
-                    <?php
-						
+                    <?php						
 						if($_SESSION['msg']['reg-err'])
 						{
 							echo '<div class="err">'.$_SESSION['msg']['reg-err'].'</div>';
@@ -303,36 +304,118 @@ if($_SESSION['msg'])
 	
 </div> <!--panel -->
 
+
 <div class="pageContent">
-    <div id="main">
-      <div class="container">
-        <h1>A Apartment Login System</h1>
-        <h2>Owners &amp; Renters Registration also avaibable in Android</h2>
-        </div>
-        
-        <div class="container">
-        
-          <p>In this post, I will be discussing about Introduction to Google Cloud Messaging service. You should have heard the word ‘GCM’ somewhere and you are here to understand what it is and how it is used in Android applications.
-			 Following this post, I will be creating couple of Android applications incorporating GCM service to demonstrate in what are the different ways we can use GCM, so I request you to keep track of GCM tutorial series gonna be published here.</p>
+<div id="main">
+	<?php
+		if(!$_SESSION['id']):			
+	?>			
+   
+   <div class="container">
+				<h1>GCM - Google Cloud Messaging </h1>
+				<h2>Google Cloud Messaging in Android</h2>
+			</div>            		
+			
+			<div class="container">
+			<p>In this post, I will be discussing about Introduction to Google Cloud Messaging service. You should have heard the word ‘GCM’ somewhere and you are here to understand what it is and how it is used in Android applications.Following this post, I will be creating couple of Android applications incorporating GCM service to demonstrate in what are the different ways we can use GCM, so I request you to keep track of GCM tutorial series gonna be published here.</p>
 			<p> GCM – Google Cloud Messaging is a free service from Google to send and receive messages to and from Android devices.</p>
-			<p></p>		
-			<p></p>					
-			<p><h1>Primary characteristics of Google Cloud Messaging (GCM)</h1></p>
+			
+			<br>
+			<br>			
+			<h1><p>Primary characteristics of Google Cloud Messaging (GCM)</p></h1>
 			<p>It allows third party application servers (Java, Dot Net or even Php server) to send messages to their Android applications.</p>
 			<p>Using the GCM Cloud Connection Server, you can receive upstream messages from the user’s device.</p>
 			<p>An Android application on an Android device doesn’t need to be running to receive messages. The system will wake up the Android application via Intent broadcast when the message arrives, as long as the application is set up with the proper broadcast receiver and permissions.</p>
 			<p>It does not provide any built-in user interface or other handling for message data. GCM simply passes raw message data received straight to the Android application. Handling data is upto the developer.</p>
 			<p>For example, the application might post a notification, display a custom user interface, or silently sync data.</p>
 			<p>It requires devices running Android 2.2 or higher that also have the Google Play Store application installed, or or an emulator running Android 2.2 with Google APIs.</p>
-			<p>It uses an existing connection for Google services. For pre-3.0 devices, this requires users to set up their Google account on their mobile devices. A Google account is not a requirement on devices running Android 4.0.4 or higher.</p>
-          		  
-          <div class="clear"></div>
-        </div>
-        
-      <div class="container tutorial-info">
-      This is a Link through which you can send GCM mesages to the active / registered android users <a href="http://www.myandroidng.com/gcm/PushNotificationPHP.php" >Click me</a></div>
-    </div>
+			<p>It uses an existing connection for Google services. For pre-3.0 devices, this requires users to set up their Google account on their mobile devices. A Google account is not a requirement on devices running Android 4.0.4 or higher.</p>          		  
+			</div>
+			
+			<div class="clear"></div>        
+			<div class="clear"></div>        
+			<div class="clear"></div>        
+			<div class="clear"></div>
+			
+			<div class="container tutorial-info">
+				This is a Link through which you can notify messages to the registered android users only <a href="http://www.myandroidng.com/gcm/PushNotificationPHP.php" >Click me</a>
+			</div>
+			
+	<?php			
+		else:			
+	?>		
+			<div class="container">
+			<h1>A Apartment Login System</h1>
+			<h2>Owners &amp; Renters Registration also avaibable in Android</h2>
+        </div>            
+		
+		<div class="container">
+			<p>Lakshya Apartments is one of the residential development of Lakshya Infratech, located in Ankur Vihar, Ghaziabad. It offers spacious and skillfully designed 1BHK, 2BHK and 3BHK apartments. The project is well equipped with all the amenities to facilitate the needs of the residents.</p>
+			<p>Lakshya Homes is one of the popular residential developments in Kadugodi, neighborhood of Bangalore. It is among the completed projects of its Builder. It has lavish yet thoughtfully designed residences in 1 Blocks.</p>			
+			<br><br>			
+			<h1><p>Project Delivery</p></h1>
+			<p>Project is Ready to Occupy and was delivered around March 2015</p>
+		</div>			
+		<div class="clear"></div>        
+			
+		<div class="container">
+			<h1><p>To Apartment Owners of Lakshaya Residence<p></h1>
+			<p>You are hereby invited to the General Meeting for the establishment of a Homeowners Association of Lakshaya Residence will take place on Wednesday 10th of September at 9.00pm with the agenda outlined below.This meeting will take place in the meeting room on the ground floor in Lakshaya Residence.</p>
+			<br>
+			<p>If this meeting does not meet the required majority, then a second meeting will take place on Wednesday 17th of April at 9.00pm at the same location stated above.</p>
+			<br>
+			<p>We kindly request that all homeowners or their nominated proxies attend this important meeting</p>
+			
+			<p>The agenda of the meeting will be as follows;</p>
+			<p>1.      Opening, registration of attendees and nomination of a Chairman of the meeting.</p>
+			<p>2.      Proposal for the system of management and the board.</p>
+			<p>3.      Nomination of the Management Board and a property manager (supervisor)</p>
+			<p>4.      Suggestions</p>
+			<p>5.      Closing</p>
+		</div>				
+		
+		<div class="clear"></div>        
+		
+		<div class="container">
+			<h1><p>Apartment App Features</p></h1>	
+			<h2>
+			<p>Home</p>
+			<p>Lakshaya Community GuideLines</p>
+			<p>General Information</p>
+			<p>Maintainance</p>
+			<p>Leisure Facilities</p>
+			<p>Laundry Facilities</p>
+			<p>Safety and Security</p>
+			<p>Common Areas </p>
+			<p>Parking</p>
+			<p>Homeowner Association</p>
+			<p>Residents Photo Album</p>
+			<p>Utilities</p>
+			<p>Lakshaya Events</p>
+			<p>Important Phone Numbers</p>
+			<p>Maps</p>
+			<p>Post and comments</p>
+			<p>Renters</p>
+			<p>Rules and Regulations</p>
+			<p>Reviews & Testimonials</p>
+			<p>Contact Us</p>
+			<p>About Us</p>
+			</h2>
+		</div>
+		
+		<div class="container tutorial-info">
+			This is a Link through which you can notify messages to the registered android users only <a href="http://www.myandroidng.com/gcm/PushNotificationPHP.php" >Click me</a>
+		</div>
+			
+	<?php
+		endif;
+	?>	
+	<div class="container">
+		<div class="copyright">Copyright &copy; <?php echo date("Y"); ?> Neeraj Goswami All rights reserved.</div>
+	</div>
+	
 </div>
-
+</div>	
 </body>
+
 </html>
