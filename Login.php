@@ -332,15 +332,6 @@ if($_SESSION['msg'])
 			<p>It uses an existing connection for Google services. For pre-3.0 devices, this requires users to set up their Google account on their mobile devices. A Google account is not a requirement on devices running Android 4.0.4 or higher.</p>          		  
 			</div>
 			
-			<div class="clear"></div>        
-			<div class="clear"></div>        
-			<div class="clear"></div>        
-			<div class="clear"></div>
-			
-			<div class="container tutorial-info">
-				This is a Link through which you can notify messages to the registered android users only <a href="http://www.myandroidng.com/gcm/PushNotificationPHP.php" >Click me</a>
-			</div>
-			
 	<?php			
 		else:			
 	?>		
@@ -404,7 +395,7 @@ if($_SESSION['msg'])
 		</div>
 		
 		<div class="container tutorial-info">
-			This is a Link through which you can notify messages to the registered android users only <a href="http://www.myandroidng.com/gcm/PushNotificationPHP.php" >Click me</a>
+			This is a Link through which you can notify messages to the registered android users only <a href="http://www.myandroidng.com/Apartment/Pushnotificationlakshay.php" >Click me</a>
 		</div>
 			
 	<?php

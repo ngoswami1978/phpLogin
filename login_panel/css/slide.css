@@ -8,7 +8,6 @@ Version: 1.0
 
 	The CSS, XHTML and design is released under Creative Common License 3.0:
 	http://creativecommons.org/licenses/by-sa/3.0/
-
 */ 
 
 /***** clearfix *****/
@@ -208,6 +207,7 @@ Version: 1.0
 /* BUTTONS */
 /* Login and Register buttons */
 #panel .content input.bt_login,
+#panel .content input.bt_sendNotification
 #panel .content input.bt_register {
 	display: block;
 	float: left;
@@ -231,6 +231,12 @@ Version: 1.0
 	background: transparent url(../images/bt_register.png) no-repeat 0 0;
 }
 
+#panel .content input.bt_sendNotification {
+	width: 94px;
+	color: white;
+	background: transparent url(../images/bt_login.png) no-repeat 0 0;
+}
+
 #panel .lost-pwd {
 	display: block;
 	float:left;
@@ -239,4 +245,3 @@ Version: 1.0
 	font-size: 0.95em;
 	text-decoration: underline;
 }
-

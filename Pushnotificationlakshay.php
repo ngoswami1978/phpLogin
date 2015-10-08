@@ -66,8 +66,9 @@ session_start();
     <head>
         <title>Apartment Notification System</title>
 		 <link rel="stylesheet" type="text/css" href="Login.css" media="screen" /> 
+		 <link rel="stylesheet" type="text/css" href="login_panel/css/slide.css" media="screen" />
     </head>
-	<body>
+<body>	
 	<div id="main">
 		<div class="container">	
 			<h1>Apartment Notification System</h1>	
@@ -79,14 +80,21 @@ session_start();
 			else echo '<h1>Please, <a href="Login.php">login</a> and come back later!</h1>';
 		?>
 		</div>
+		<div class="clear"></div>        			
 		
-		<form method="post" action="PushNotificationPHP.php?push=1">					                             
-			<div>                                
-				<textarea rows="2" name="message" cols="23" placeholder="Please write Message to transmit to cell phone"></textarea>
-			</div>
-			<div><input type="submit"  value="Send Push Notification" /></div>
+		<form method="post" action="Pushnotificationlakshay.php?push=1">					                             			
+			<div class="container">	
+				<textarea rows="4" name="message" cols="69" placeholder="Please write Message to transmit to cell phone"></textarea>							
+				<br>
+				<input type="submit" name="submit" value="Send Push Notification" class="bt_sendNotification"/>
+			</div>			
 		</form>
-		<p><h3><?php echo $pushStatus; ?></h3></p>        
-    </body>
+		
+		<div class="clear"></div>        			
+		<div class="container">		
+			<h2><p><u>Push Result</u></p></h2>
+			<p><h2><?php echo $pushStatus; ?></h2></p>        	
+		</div>		
 	</div>
+</body>
 </html>

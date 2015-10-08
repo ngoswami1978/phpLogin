@@ -76,7 +76,7 @@ session_start();
 		
     
 	<div class="container tutorial-info">
-		This is a Link through which you can notify messages to the registered android users only <a href="http://www.myandroidng.com/gcm/PushNotificationPHP.php" >Click me</a>
+		This is a Link through which you can notify messages to the registered android users only <a href="http://www.myandroidng.com/Apartment/Pushnotificationlakshay.php" >Click me</a>
 	</div>
 </div>
 
